@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <title>Multi - step Form</title>
+  </head>
+  <body>
+    <main>
+      <div class="mainContainer">
+        <div class="sidebar">
+          <div class="stepIndicator">
+            <div class="stepNumber">1</div>
+            <div class="stepInfo">
+              <span>Step 1</span>
+              <p>YOUR INFO</p>
+            </div>
+          </div>
+          <div class="stepIndicator">
+            <div class="stepNumber">2</div>
+            <div class="stepInfo">
+              <span>Step 2</span>
+              <p>SELECT PLAN</p>
+            </div>
+          </div>
+          <div class="stepIndicator">
+            <div class="stepNumber">3</div>
+            <div class="stepInfo">
+              <span>Step 3</span>
+              <p>ADD-ONS</p>
+            </div>
+          </div>
+          <div class="stepIndicator">
+            <div class="stepNumber">4</div>
+            <div class="stepInfo">
+              <span>Step 4</span>
+              <p>SUMMARY</p>
+            </div>
+          </div>
+        </div>
+        <section class="stepOne">
+          <div class="stepHeader">
+            <h1>Personal Info</h1>
+            <p>Please provide your name, email address, and phone number.</p>
+          </div>
+          <form class="personalInfoForm">
+            <div class="inputGroup">
+              <label for="name">Name</label>
+              <p class="errorMessage">This Field is Required</p>
+            </div>
+            <input
+              type="text"
+              id="name"
+              placeholder="e.g. Stephen King"
+              required
+            />
+            <div class="inputGroup">
+              <label for="email">Email Address</label>
+              <p class="errorMessage">This Field is Required</p>
+            </div>
+            <input
+              type="text"
+              id="email"
+              placeholder="e.g. stephenking@lorem.com "
+              required
+            />
+            <div class="inputGroup">
+              <label for="phone">Phone Number</label>
+              <p class="errorMessage">This Field is Required</p>
+            </div>
+            <input
+              type="tel"
+              id="phone"
+              placeholder="e.g. +1 234 567 890"
+              required
+            />
+          </form>
+          <div class="buttonGroup">
+            <button type="submit" class="nextButton">Next Step</button>
+          </div>
+        </section>
+
+        <section class="stepTwo">
+          <div class="stepHeader">
+            <h1>Select your plan</h1>
+            <p>You have the option of monthly or yearly billing.</p>
+          </div>
+          <form class="planSelectionForm">
+            <div class="planOption">
+              <img src="./assets/images/icon-arcade.svg" alt="Arcade" />
+              <div class="planDetails">
+                <h3>Arcade</h3>
+                <span>$9/mo</span>
+              </div>
+            </div>
+            <div class="planOption">
+              <img src="./assets/images/icon-advanced.svg" alt="Advanced" />
+              <div class="planDetails">
+                <h3>Advanced</h3>
+                <span>$12/mo</span>
+              </div>
+            </div>
+            <div class="planOption">
+              <img src="./assets/images/icon-pro.svg" alt="Pro" />
+              <div class="planDetails">
+                <h3>Pro</h3>
+                <span>$15/mo</span>
+              </div>
+            </div>
+          </form>
+          <div class="billingToggle">
+            <p>Monthly</p>
+            <label class="toggleSwitch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+            <p>Yearly</p>
+          </div>
+          <div class="buttonGroup">
+            <button type="button" class="backButton">Go Back</button>
+            <button type="submit" class="nextButton">Next Step</button>
+          </div>
+        </section>
+
+        <section class="stepThree">
+          <div class="stepHeader">
+            <h1>Pick add-ons</h1>
+            <p>Add-ons help enhance your gaming experience.</p>
+          </div>
+          <form class="addOnsForm">
+            <div class="addOnOption">
+              <input type="checkbox" id="onlineServe" />
+              <div class="addOnDetails">
+                <label for="online">Online service</label>
+                <span>Access to multiplayer games</span>
+              </div>
+              <p class="addOnPrice">+$1/mo</p>
+            </div>
+            <div class="addOnOption">
+              <input type="checkbox" id="largerStore" />
+              <div class="addOnDetails">
+                <label for="larger">Larger storage</label>
+                <span>Extra 1TB of cloud save</span>
+              </div>
+              <p class="addOnPrice">+$2/mo</p>
+            </div>
+            <div class="addOnOption">
+              <input type="checkbox" id="customizeProfile" />
+              <div class="addOnDetails">
+                <label for="customize">Customizable Profile</label>
+                <span>Custom theme on your profile</span>
+              </div>
+              <p class="addOnPrice">+$2/mo</p>
+            </div>
+          </form>
+          <div class="buttonGroup">
+            <button type="button" class="backButton">Go Back</button>
+            <button type="submit" class="nextButton">Next Step</button>
+          </div>
+        </section>
+
+        <section class="stepFour">
+          <div class="stepHeader">
+            <h1>Finishing up</h1>
+            <p>Double-check everything looks OK before confirming.</p>
+          </div>
+          <div class="summaryContainer">
+            <div class="selectedPlan">
+              <div class="planInfo">
+                <p>Arcade (Monthly)</p>
+                <p class="planPrice">$9/mo</p>
+              </div>
+              <hr />
+              <div class="addOnsSummary">
+                <template>
+                  <div class="addOnSummaryItem">
+                    <span>Online service</span>
+                    <span>+$1/mo</span>
+                  </div>
+                </template>
+              </div>
+            </div>
+            <p class="totalPrice">Total (per month ) <span>+$12/mo</span></p>
+          </div>
+          <div class="buttonGroup">
+            <button type="button" class="backButton">Go Back</button>
+            <button type="submit" class="confirmButton">Next Step</button>
+          </div>
+        </section>
+        <section class="stepFive">
+          <div class="thankYouContainer">
+            <div>
+              <img
+                src="./assets/images/icon-thank-you.svg"
+                alt="Thank you Icon"
+              />
+            </div>
+            <div>
+              <h1>Thank you!</h1>
+            </div>
+            <p>
+              Thanks for confirming your subscription! We hope you have fun
+              using our platform. If you ever need support, please feel free to
+              email us at support@loremgaming.com.
+            </p>
+          </div>
+        </section>
+        <button></button>
+      </div>
+    </main>
+  </body>
+</html>
