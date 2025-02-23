@@ -71,7 +71,7 @@ body {
 .sidebar {
   background-image: url("../images/bg-sidebar-desktop.svg");
   background-repeat: no-repeat;
-  width: 600px;
+  width: 400px;
   height: 568px;
   padding: 3em 2em;
   display: flex;
@@ -148,4 +148,79 @@ body {
   background-color: var(--primary-marine-blue);
   cursor: pointer;
   color: white;
+}
+
+/* Styling of step one section of the form */
+
+.stepOne {
+  display: flex;
+  width: 90%;
+}
+
+.stepOne form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  gap: 1em;
+}
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--primary-marine-blue);
+}
+
+.stepOne form input {
+  padding: 1em;
+  border-radius: 0.814rem;
+  border: 1px solid var(--neutral-cool-gray);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.stepOne form input:focus {
+  outline-color: var(--primary-purplish-blue);
+}
+
+form input::placeholder {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+}
+
+form .errorMessage {
+  color: var(--primary-strawberry-red);
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: none;
+}
+
+/* Styling of step two section of the form */
+
+.stepTwo {
+  display: none;
+  width: 90%;
+}
+
+/* Styling of step three section of the form */
+
+.stepThree {
+  display: none;
+  width: 80%;
+}
+
+/* Styling of step four section of the form */
+
+.stepFour {
+  display: none;
+  width: 80%;
+}
+
+/* Styling of step five section of the form */
+
+.stepFive {
+  display: none;
+  width: 80%;
 }
