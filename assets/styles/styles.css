@@ -66,6 +66,8 @@ body {
   padding: 1em;
 }
 
+/* Styling of the sidebar and its content */
+
 .sidebar {
   background-image: url("../images/bg-sidebar-desktop.svg");
   background-repeat: no-repeat;
@@ -114,4 +116,36 @@ body {
 .stepInfo p {
   color: var(--neutral-white);
   font-weight: 800;
+}
+
+/* Global Styling of the step of the multi-step form */
+
+.formSteps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formSteps .stepHeader {
+  margin-bottom: auto;
+  padding-top: 2em;
+  line-height: 2.5rem;
+}
+
+.stepHeader .stepHeading {
+  color: var(--primary-marine-blue);
+}
+
+.stepHeader .headExplain {
+  color: var(--neutral-cool-gray);
+}
+
+.nextButton {
+  margin: auto 0em 2em auto;
+  border: none;
+  padding: 1em 2em;
+  border-radius: 0.44rem;
+  background-color: var(--primary-marine-blue);
+  cursor: pointer;
+  color: white;
 }
