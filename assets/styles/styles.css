@@ -45,3 +45,73 @@
 img {
   max-width: 100%;
 }
+
+body {
+  background-color: var(--neutral-magnolia);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.overall {
+  width: 900px;
+  background-color: var(--neutral-white);
+  border-radius: 1rem;
+  box-shadow: 0px 0px 1px black;
+}
+
+.mainContainer {
+  display: flex;
+  padding: 1em;
+}
+
+.sidebar {
+  background-image: url("../images/bg-sidebar-desktop.svg");
+  background-repeat: no-repeat;
+  width: 600px;
+  height: 568px;
+  padding: 3em 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.stepNumber {
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--neutral-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--neutral-white);
+  font-weight: bold;
+}
+
+.activeStep .stepNumber {
+  background-color: var(--primary-light-blue);
+  color: var(--primary-marine-blue);
+}
+
+.stepIndicator {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+}
+
+.stepInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+
+.stepInfo span {
+  color: var(--neutral-light-gray);
+  font-size: 0.812rem;
+}
+
+.stepInfo p {
+  color: var(--neutral-white);
+  font-weight: 800;
+}
