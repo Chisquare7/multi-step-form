@@ -330,7 +330,7 @@ input:checked + .slider::before {
 /* Styling of step three section of the form */
 
 .stepThree {
-  display: flex;
+  display: none;
   width: 80%;
 }
 
@@ -389,8 +389,60 @@ input:checked + .slider::before {
 /* Styling of step four section of the form */
 
 .stepFour {
-  display: none;
+  display: flex;
   width: 80%;
+}
+
+.summaryContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.selectedPlan {
+  padding: 1.5em;
+  background-color: var(--neutral-magnolia);
+  border-radius: 0.625rem;
+}
+
+.selected {
+  border: 2px solid var(--primary-purplish-blue);
+  background-color: var(--neutral-magnolia);
+}
+
+.planInfo {
+  padding: 1em 0em;
+  color: var(--primary-marine-blue);
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+.addOnSummaryItem {
+  padding: 1em 0em;
+  color: var(--neutral-cool-gray);
+  font-weight: 500;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.addOnSummaryItem .summaryItemPrice {
+  color: var(--primary-marine-blue);
+}
+
+.totalPrice {
+  padding: 1.5em;
+  color: var(--neutral-cool-gray);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.totalPrice span {
+  font-size: 1.2rem;
+  color: var(--primary-purplish-blue);
 }
 
 /* Styling of step five section of the form */
