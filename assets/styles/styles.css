@@ -153,7 +153,7 @@ body {
 /* Styling of step one section of the form */
 
 .stepOne {
-  display: none;
+  display: flex;
   width: 90%;
 }
 
@@ -448,7 +448,7 @@ input:checked + .slider::before {
 /* Styling of step five section of the form */
 
 .stepFive {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -458,4 +458,85 @@ input:checked + .slider::before {
 
 .stepFive button {
   display: none;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    position: relative;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url("../images/bg-sidebar-mobile.svg");
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .stepInfo {
+    display: none;
+  }
+
+  .overall {
+    position: absolute;
+    top: 15%;
+    max-width: 375px;
+    background-color: white;
+  }
+
+  .mainContainer {
+    padding: 2em;
+  }
+
+  .buttonGroup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    height: 100px;
+    padding-inline: 1em;
+  }
+
+  .stepOne .buttonGroup button {
+    margin: auto 0 auto auto;
+  }
+
+  .stepTwo form {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .planOption {
+    height: 100px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .formSteps {
+    width: 100%;
+    gap: 1em;
+  }
+
+  .formSteps .stepHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    line-height: 1.5rem;
+    padding-top: 0;
+  }
+
+  .billingToggle {
+    margin: 2em 0;
+  }
 }
