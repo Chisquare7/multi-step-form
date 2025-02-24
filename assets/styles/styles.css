@@ -200,7 +200,7 @@ form .errorMessage {
 /* Styling of step two section of the form */
 
 .stepTwo {
-  display: flex;
+  display: none;
   width: 90%;
 }
 
@@ -330,8 +330,60 @@ input:checked + .slider::before {
 /* Styling of step three section of the form */
 
 .stepThree {
-  display: none;
+  display: flex;
   width: 80%;
+}
+
+.addOnsForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  gap: 1.5em;
+}
+
+.addOnOption {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  border-radius: 0.625rem;
+  border: 1px solid var(--neutral-cool-gray);
+  cursor: pointer;
+}
+
+.addOnDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  margin-left: 0.8em;
+}
+
+.addOnDetails label {
+  font-weight: bold;
+  user-select: none;
+  color: var(--primary-marine-blue);
+}
+
+.addOnDetails span {
+  font-weight: bold;
+  color: var(--neutral-cool-gray);
+  font-size: 0.9rem;
+}
+
+.addOnPrice {
+  margin-left: auto;
+  color: var(--primary-purplish-blue);
+}
+
+.ad-selected {
+  border: 1px solid var(--primary-purplish-blue);
+  background-color: var(--neutral-magnolia);
+}
+
+.addOnsForm input {
+  accent-color: var(--primary-purplish-blue);
+  user-select: none;
+  transform: scale(1.3);
 }
 
 /* Styling of step four section of the form */
