@@ -389,7 +389,7 @@ input:checked + .slider::before {
 /* Styling of step four section of the form */
 
 .stepFour {
-  display: flex;
+  display: none;
   width: 80%;
 }
 
@@ -448,6 +448,14 @@ input:checked + .slider::before {
 /* Styling of step five section of the form */
 
 .stepFive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  width: 90%;
+}
+
+.stepFive button {
   display: none;
-  width: 80%;
 }
