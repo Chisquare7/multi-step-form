@@ -118,6 +118,10 @@ body {
   font-weight: 800;
 }
 
+.err {
+  border: 2px solid var(--Strawberry-red);
+}
+
 /* Global Styling of the step of the multi-step form */
 
 .formSteps {

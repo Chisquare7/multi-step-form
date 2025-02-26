@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="./assets/styles/styles.css" />
     <title>Multi - step Form</title>
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <main class="overall">
@@ -97,25 +98,25 @@
             </p>
           </div>
           <form class="planSelectionForm">
-            <div class="planOption">
+            <div class="planOption selected">
               <img src="./assets/images/icon-arcade.svg" alt="Arcade" />
               <div class="planDetails">
                 <h3>Arcade</h3>
-                <span>$9/mo</span>
+                <span class="planPrice">$9/mo</span>
               </div>
             </div>
             <div class="planOption">
               <img src="./assets/images/icon-advanced.svg" alt="Advanced" />
               <div class="planDetails">
                 <h3>Advanced</h3>
-                <span>$12/mo</span>
+                <span class="planPrice">$12/mo</span>
               </div>
             </div>
             <div class="planOption">
               <img src="./assets/images/icon-pro.svg" alt="Pro" />
               <div class="planDetails">
                 <h3>Pro</h3>
-                <span>$15/mo</span>
+                <span class="planPrice">$15/mo</span>
               </div>
             </div>
           </form>
@@ -141,7 +142,7 @@
             </p>
           </div>
           <form class="addOnsForm">
-            <div class="addOnOption">
+            <div class="addOnOption" addon-id="1 ">
               <input type="checkbox" id="onlineServe" />
               <div class="addOnDetails">
                 <label for="online">Online service</label>
@@ -149,7 +150,7 @@
               </div>
               <p class="addOnPrice">+$1/mo</p>
             </div>
-            <div class="addOnOption">
+            <div class="addOnOption" addon-id="2">
               <input type="checkbox" id="largerStore" />
               <div class="addOnDetails">
                 <label for="larger">Larger storage</label>
@@ -157,7 +158,7 @@
               </div>
               <p class="addOnPrice">+$2/mo</p>
             </div>
-            <div class="addOnOption">
+            <div class="addOnOption" addon-id="3">
               <input type="checkbox" id="customizeProfile" />
               <div class="addOnDetails">
                 <label for="customize">Customizable Profile</label>
@@ -182,7 +183,7 @@
           <div class="summaryContainer">
             <div class="selectedPlan">
               <div class="planInfo">
-                <p>Arcade (Monthly)</p>
+                <p class="planName">Arcade (Monthly)</p>
                 <p class="planPrice">$9/mo</p>
               </div>
               <hr />
